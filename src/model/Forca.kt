@@ -83,11 +83,11 @@ class Forca(private var palavra: String, private var dica: String) {
     }
 
     fun testarLetra(letra: String) {
-        if (this.letrasUsadas.contains(letra)) {
+        if (this.letrasUsadas.contains(letra[0])) {
             throw Throwable("\nLetra ${letra} já digitada, tente outra letra")
         }
         else {
-            this.letrasUsadas += "${letra} "
+            this.letrasUsadas += "${letra[0]} "
         }
     }
 
