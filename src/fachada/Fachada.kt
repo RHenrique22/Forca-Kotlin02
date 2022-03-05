@@ -22,12 +22,6 @@ class Fachada(private var palavra: String, private var dica: String) {
         }
     }
 
-    fun regra() {
-        println("\nBEM-VINDO AO JOGO DA FORCA")
-        println("Jogo da forca convencional, porém você pode tentar descobrir a palavra")
-        println("Letra a letra com uma quantidade determinada de tentativas\n")
-    }
-
     fun iniciar() {
         jogoDaForca.iniciarJogo()
         this.status()
