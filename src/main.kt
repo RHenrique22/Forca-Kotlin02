@@ -2,6 +2,7 @@ import fachada.Fachada
 import java.util.*
 
 fun main() {
+    
     val input   = Scanner(System.`in`)
 
     print("Digite uma palavra: ")
@@ -16,7 +17,6 @@ fun main() {
         print("Informe uma palavra e uma dica")
     }
     else {
-        control.regra()
         control.iniciar()
 
         print("Digite uma letra: ")
